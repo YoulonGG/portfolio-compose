@@ -39,7 +39,12 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
+            // Corotine
             implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+
+            // Naviage
+            implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha10")
         }
     }
 }

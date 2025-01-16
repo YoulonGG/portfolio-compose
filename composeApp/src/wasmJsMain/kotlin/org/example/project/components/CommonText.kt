@@ -16,6 +16,7 @@ fun ContentText(
     fontWeight: FontWeight = FontWeight.ExtraBold,
     color: Color = Color.Black,
     fontSize: TextUnit = 72.sp,
+    lineHeight: TextUnit = 74.sp,
     textAlign: TextAlign = TextAlign.Start
 ) {
     Text(
@@ -24,17 +25,18 @@ fun ContentText(
         fontWeight = fontWeight,
         fontSize = fontSize,
         textAlign = textAlign,
-        color = color
+        color = color,
+        lineHeight = lineHeight
     )
 }
 
-
 @Composable
-fun NavBarText(
+fun SmallText(
     modifier: Modifier = Modifier,
-    fontWeight: FontWeight = FontWeight.SemiBold,
+    fontWeight: FontWeight = FontWeight.W400,
     color: Color = Color.Black,
-    fontSize: TextUnit = 16.sp,
+    fontSize: TextUnit = 14.sp,
+    lineHeight: TextUnit = 16.sp,
     textAlign: TextAlign = TextAlign.Center,
     text: String
 ) {
@@ -44,6 +46,28 @@ fun NavBarText(
         fontWeight = fontWeight,
         color = color,
         fontSize = fontSize,
-        textAlign = textAlign
+        textAlign = textAlign,
+        lineHeight = lineHeight
+    )
+}
+
+@Composable
+fun MiddleText(
+    modifier: Modifier = Modifier,
+    fontWeight: FontWeight = FontWeight.SemiBold,
+    color: Color = Color.Black,
+    fontSize: TextUnit = 18.sp,
+    lineHeight: TextUnit = 16.sp,
+    textAlign: TextAlign = TextAlign.Center,
+    text: String
+) {
+    Text(
+        modifier = modifier,
+        text = text,
+        fontWeight = fontWeight,
+        color = color,
+        fontSize = fontSize,
+        textAlign = textAlign,
+        lineHeight = lineHeight
     )
 }
