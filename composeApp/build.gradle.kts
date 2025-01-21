@@ -43,6 +43,8 @@ kotlin {
             // Corotine
             implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 
+//            implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0")
+
             // Naviage
             implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha10")
         }

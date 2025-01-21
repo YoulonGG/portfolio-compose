@@ -20,6 +20,7 @@ fun ContentText(
     textAlign: TextAlign = TextAlign.Start
 ) {
     Text(
+        maxLines = 2,
         modifier = modifier,
         text = text,
         fontWeight = fontWeight,
@@ -41,6 +42,7 @@ fun SmallText(
     text: String
 ) {
     Text(
+        maxLines = 2,
         modifier = modifier,
         text = text,
         fontWeight = fontWeight,
@@ -62,6 +64,7 @@ fun MiddleText(
     text: String
 ) {
     Text(
+        maxLines = 2,
         modifier = modifier,
         text = text,
         fontWeight = fontWeight,
